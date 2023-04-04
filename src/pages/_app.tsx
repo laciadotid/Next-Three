@@ -15,33 +15,35 @@ import { AppProps } from "next/app";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Sirah from "@/components/sirah";
+import Scripts from "@/components/scripts"
 
 const App = ({ Component, pageProps }: AppProps) => {
-    return (
-        <ChakraProvider resetCSS={true}>
-            <div>
-                <Sirah />
-                <Center>
-                    <Box
-                        maxW={"720px"}
-                        w={"full"}
-                        boxShadow={"2xl"}
-                        rounded={"xl"}
-                        p={6}
-                        m={4}
-                        overflow={"hidden"}
-                    >
-                        <Adsense />
-                        <Navbar />
-                        <Adsense />
-                        <Component {...pageProps} />
-                        <Adsense />
-                        <Footer />
-                    </Box>
-                </Center>
-            </div>
-        </ChakraProvider>
-    );
+  return (
+      <ChakraProvider resetCSS={true}>
+          <div>
+              <Sirah />
+              <Scripts />
+              <Center>
+                  <Box
+                      maxW={"720px"}
+                      w={"full"}
+                      boxShadow={"2xl"}
+                      rounded={"xl"}
+                      p={6}
+                      m={4}
+                      overflow={"hidden"}
+                  >
+                      <Adsense />
+                      <Navbar />
+                      <Adsense />
+                      <Component {...pageProps} />
+                      <Adsense />
+                      <Footer />
+                  </Box>
+              </Center>
+          </div>
+      </ChakraProvider>
+  );
 };
 
 export default App;

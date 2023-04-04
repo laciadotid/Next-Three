@@ -9,22 +9,23 @@ class Scripts extends React.Component {
             <div>
                 <Script
                     data-ad-client="ca-pub-6599086733747900"
-                    async
                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                    strategy="beforeInteractive"
+                    async={true}
                 />
                 <Script
-                    async
-                    src="https://www.googletagmanager.com/gtag/js?id=UA-109825194-2"
+                    src="https://www.googletagmanager.com/gtag/js?id=G-VRQ57TN816"
+                    strategy="beforeInteractive"
+                    async={true}
                 />
-                <Script
-                    id="GoogleAnalytics"
+                <Script id="GoogleAnalytics"
                     dangerouslySetInnerHTML={{
                         __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', 'UA-109825194-2');
+              gtag('config', 'G-VRQ57TN816');
               `,
                     }}
                 />
