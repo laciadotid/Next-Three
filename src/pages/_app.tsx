@@ -25,7 +25,7 @@ const App = ({ Component, pageProps }: AppProps) => {
               <Scripts />
               <Center>
                   <Box
-                      maxW={"720px"}
+                    //   maxW={"720px"}
                       w={"full"}
                       boxShadow={"2xl"}
                       rounded={"xl"}
