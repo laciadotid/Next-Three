@@ -84,7 +84,7 @@ export default function Nav() {
                                         <Link href="tentang">Tentang Kami</Link>
                                     </MenuItem>
                                     <MenuItem>
-                                        <Link href="tentang">Jasa Website</Link></MenuItem>
+                                        <Link href="jasa">Jasa Website</Link></MenuItem>
                                     <MenuItem>
                                         <Link href="kontak">Kontak</Link>
                                     </MenuItem>
