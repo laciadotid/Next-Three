@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
 
-export default function NotFound() {
+export default function Kontak() {
     return (
         <Center>
             <NextSeo
