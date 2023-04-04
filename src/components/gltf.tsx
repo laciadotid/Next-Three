@@ -2,17 +2,17 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { loadGLTFModel } from "@/lib/model";
-import { DogSpinner, DogContainer } from "@/components/voxel-dog-loader";
+import { EarthSpinner, EarthContainer } from "@/components/gltf-loader";
 
 function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x - 1, 4));
 }
 
-const VoxelDog = () => {
+const VoxelEarth = () => {
     const refContainer = useRef();
     const [loading, setLoading] = useState(true);
     const refRenderer = useRef();
-    const urlDogGLB = "/dog.glb";
+    const urlEarthGLB = "/dog.glb";
 
     const handleWindowResize = useCallback(() => {
         const { current: renderer } = refRenderer;
@@ -71,7 +71,7 @@ const VoxelDog = () => {
             controls.autoRotate = true;
             controls.target = target;
 
-            loadGLTFModel(scene, urlDogGLB, {
+            loadGLTFModel(scene, urlEarthGLB, {
                 receiveShadow: false,
                 castShadow: false,
             }).then(() => {
@@ -119,10 +119,10 @@ const VoxelDog = () => {
     }, [handleWindowResize]);
 
     return (
-        <DogContainer ref={refContainer}>
-            {loading && <DogSpinner />}
-        </DogContainer>
+        <EarthContainer ref={refContainer}>
+            {loading && <EarthSpinner />}
+        </EarthContainer>
     );
 };
 
-export default VoxelDog;
+export default VoxelEarth;

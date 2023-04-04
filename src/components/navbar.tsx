@@ -17,14 +17,8 @@ import {
 import { FaBars, FaMoon, FaSun } from "react-icons/fa";
 
 import Image from "next/image";
-import dynamic from 'next/dynamic'
-import { ReactNode } from "react";
-import VoxelDogLoader from "@/components/voxel-dog-loader";
 
-const LazyVoxelDog = dynamic(() => import("@/components/voxel-dog"), {
-    ssr: false,
-    loading: () => <VoxelDogLoader />,
-});
+import { ReactNode } from "react";
 
 const NavLink = ({ children }: { children: ReactNode }) => (
     <Link
@@ -86,17 +80,19 @@ export default function Nav() {
                                     <FaBars />
                                 </MenuButton>
                                 <MenuList alignItems={"center"}>
-                                    <MenuItem>Tentang Kami</MenuItem>
-                                    <MenuItem>Jasa Website</MenuItem>
-                                    <MenuItem>Kontak</MenuItem>
+                                    <MenuItem>
+                                        <Link href="tentang">Tentang Kami</Link>
+                                    </MenuItem>
+                                    <MenuItem>
+                                        <Link href="tentang">Jasa Website</Link></MenuItem>
+                                    <MenuItem>
+                                        <Link href="kontak">Kontak</Link>
+                                    </MenuItem>
                                 </MenuList>
                             </Menu>
                         </Stack>
                     </Flex>
                 </Flex>
-                <Container maxW="container.md" pt={14}>
-                    <LazyVoxelDog />
-                </Container>
             </Box>
         </>
     );
