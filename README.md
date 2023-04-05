@@ -1,6 +1,4 @@
-# SEKAI.ID Website V3.2
-
-🎉🎉🎉 SEKAI.ID Website Version 3.2 🎉🎉🎉
+# Next.js +three.js
 
 -   [Next.js](https://nextjs.org/)
 -   [TypeScript](https://www.typescriptlang.org/)
@@ -22,11 +20,11 @@ corepack enable
 ## instalasi
 
 ```bash
-git clone https://gitlab.com/sekaidotid/website-v3.git
+git clone https://github.com/laciadotid/Next-Three.git
 ```
 
 ```bash
-cd website-v3
+cd Next-Three
 ```
 
 ```bash
