@@ -18,7 +18,8 @@ class Scripts extends React.Component {
                     strategy="beforeInteractive"
                     async={true}
                 />
-                <Script id="GoogleAnalytics"
+                <Script
+                    id="GoogleAnalytics"
                     dangerouslySetInnerHTML={{
                         __html: `
               window.dataLayer = window.dataLayer || [];

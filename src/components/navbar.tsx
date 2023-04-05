@@ -4,6 +4,7 @@ import {
     Button,
     Container,
     Flex,
+    IconButton,
     Link,
     Menu,
     MenuButton,
@@ -19,6 +20,7 @@ import { FaBars, FaMoon, FaSun } from "react-icons/fa";
 import Image from "next/image";
 
 import { ReactNode } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const NavLink = ({ children }: { children: ReactNode }) => (
     <Link
@@ -65,9 +67,29 @@ export default function Nav() {
 
                     <Flex alignItems={"center"}>
                         <Stack direction={"row"} spacing={7}>
-                            <Button onClick={toggleColorMode}>
-                                {colorMode === "light" ? <FaMoon /> : <FaSun />}
-                            </Button>
+                            <AnimatePresence exitBeforeEnter initial={false}>
+                                <motion.div
+                                    style={{ display: "inline-block" }}
+                                    key={useColorModeValue("light", "dark")}
+                                    initial={{ y: -20, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    exit={{ y: 20, opacity: 0 }}
+                                    transition={{ duration: 0.2 }}
+                                >
+                                    <IconButton
+                                        aria-label="Toggle theme"
+                                        colorScheme={useColorModeValue(
+                                            "purple",
+                                            "orange",
+                                        )}
+                                        icon={useColorModeValue(
+                                            <FaMoon />,
+                                            <FaSun />,
+                                        )}
+                                        onClick={toggleColorMode}
+                                    ></IconButton>
+                                </motion.div>
+                            </AnimatePresence>
 
                             <Menu>
                                 <MenuButton
@@ -84,7 +106,8 @@ export default function Nav() {
                                         <Link href="tentang">Tentang Kami</Link>
                                     </MenuItem>
                                     <MenuItem>
-                                        <Link href="jasa">Jasa Website</Link></MenuItem>
+                                        <Link href="jasa">Jasa Website</Link>
+                                    </MenuItem>
                                     <MenuItem>
                                         <Link href="kontak">Kontak</Link>
                                     </MenuItem>

@@ -12,6 +12,7 @@ import {
     // Block,
     // theme,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion"
 
 import Image from "next/image";
 import Link from "next/link";
@@ -47,7 +48,10 @@ export default function Jasa() {
                     {/* konten 1 */}
 
                     <GridItem colSpan={1}>
-                        <Box
+                        <motion.button
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8 }}
+                        ><Box
                             boxShadow={"lg"}
                             border="1px"
                             borderColor="gray.200"
@@ -67,12 +71,16 @@ export default function Jasa() {
                                 Customer : Yurielle Celestine <br />
                                 https://www.youtube.com/@Yurielle
                             </Text>
-                        </Box>
+                        </Box></motion.button>
+
                     </GridItem>
 
                     {/* konten 2 */}
                     <GridItem colSpan={1}>
-                        <Box
+                        <motion.button
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8 }}
+                        ><Box
                             boxShadow={"lg"}
                             border="1px"
                             borderColor="gray.200"
@@ -89,12 +97,16 @@ export default function Jasa() {
                                 Customer : URJA <br />
                                 infosrk.club
                             </Text>
-                        </Box>
+                        </Box></motion.button>
+
                     </GridItem>
 
                     {/* konten 3 */}
                     <GridItem colSpan={1}>
-                        <Box
+                        <motion.button
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8 }}
+                        ><Box
                             boxShadow={"lg"}
                             border="1px"
                             borderColor="gray.200"
@@ -111,12 +123,16 @@ export default function Jasa() {
                                 Customer : Nilamas Food <br />
                                 nilamas.com
                             </Text>
-                        </Box>
+                        </Box></motion.button>
+
                     </GridItem>
 
                     {/* konten 4 */}
                     <GridItem colSpan={1}>
-                        <Box
+                        <motion.button
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8 }}
+                        ><Box
                             boxShadow={"lg"}
                             border="1px"
                             borderColor="gray.200"
@@ -133,12 +149,16 @@ export default function Jasa() {
                                 Customer : URJA <br />
                                 order.infosrk.club
                             </Text>
-                        </Box>
+                        </Box></motion.button>
+
                     </GridItem>
 
                     {/* konten 5 */}
                     <GridItem colSpan={1}>
-                        <Box
+                        <motion.button
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8 }}
+                        ><Box
                             boxShadow={"lg"}
                             border="1px"
                             borderColor="gray.200"
@@ -155,12 +175,16 @@ export default function Jasa() {
                                 Customer : CV RAMA Production Sidoarjo <br />
                                 ramabordirsidoarjo.com
                             </Text>
-                        </Box>
+                        </Box></motion.button>
+
                     </GridItem>
 
                     {/* konten 6 */}
                     <GridItem colSpan={1}>
-                        <Box
+                        <motion.button
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8 }}
+                        ><Box
                             boxShadow={"lg"}
                             border="1px"
                             borderColor="gray.200"
@@ -177,10 +201,15 @@ export default function Jasa() {
                                 Customer : AFC Lifescience <br />
                                 serbaonline.web.id
                             </Text>
-                        </Box>
+                        </Box></motion.button>
+
                     </GridItem>
+                    {/* konten 7 */}
                     <GridItem colSpan={1}>
-                        <Box
+                        <motion.button
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8 }}
+                        ><Box
                             boxShadow={"lg"}
                             border="1px"
                             borderColor="gray.200"
@@ -197,7 +226,8 @@ export default function Jasa() {
                                 Customer : PT Magha Sukses Mandiri <br />
                                 grandoindonesia.co.id
                             </Text>
-                        </Box>
+                        </Box></motion.button>
+
                     </GridItem>
                 </Grid>
                 {/*batas grid 1 */}

@@ -16,12 +16,8 @@ export default function Kontak() {
                 }}
             />
             <VStack>
-                <a href="mailto:hi@sekai.id">
-                        Email
-                </a>
-                <a href="https://s.sekai.id/whatsapp">
-                        Whatsapp
-                </a>
+                <a href="mailto:hi@sekai.id">Email</a>
+                <a href="https://s.sekai.id/whatsapp">Whatsapp</a>
             </VStack>
         </Center>
     );

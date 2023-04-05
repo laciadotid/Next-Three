@@ -12,6 +12,7 @@ export const EarthSpinner = () => (
     />
 );
 
+/* eslint-disable react/display-name */
 export const EarthContainer = forwardRef(({ children }, ref) => (
     <Box
         ref={ref}
