@@ -17,6 +17,10 @@ Node.js 18 / LTS terbaru
 corepack enable
 ```
 
+```bash
+corepack prepare yarn@stable --activate
+```
+
 ## instalasi
 
 ```bash
