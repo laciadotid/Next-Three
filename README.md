@@ -9,7 +9,7 @@
 
 ## Rekomendasi sistem
 
-Node.js 18 / LTS terbaru
+Node.js 18.6 / LTS terbaru
 
 ## jika belum mengaktifkan Yarn
 
