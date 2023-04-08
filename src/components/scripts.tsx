@@ -13,13 +13,13 @@ class Scripts extends React.Component {
                     strategy="beforeInteractive"
                     async={true}
                 />
+                {/*
                 <Script
                     src="https://www.googletagmanager.com/gtag/js?id=G-VRQ57TN816"
                     strategy="beforeInteractive"
                     async={true}
                 />
-                <Script
-                    id="GoogleAnalytics"
+                <Script id="GoogleAnalytics"
                     dangerouslySetInnerHTML={{
                         __html: `
               window.dataLayer = window.dataLayer || [];
@@ -29,7 +29,8 @@ class Scripts extends React.Component {
               gtag('config', 'G-VRQ57TN816');
               `,
                     }}
-                />
+                /> 
+                */}
             </div>
         );
     }
