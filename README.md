@@ -1,4 +1,4 @@
-# Next.js +three.js
+# Next.js + Three.js
 
 -   [Next.js](https://nextjs.org/)
 -   [TypeScript](https://www.typescriptlang.org/)
