@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Box, Center } from "@chakra-ui/react";
+import { Box, Center, HStack } from "@chakra-ui/react";
 import {
     FaDiscord,
     FaFacebook,
@@ -28,69 +28,78 @@ class Footer extends React.Component {
                     overflow={"hidden"}
                 >
                     <div className="relative p-6 sm:px-6 lg:px-8">
-                        <a
-                            className="inline-block px-6"
-                            href={siteConfig.socials.Discord}
-                        >
-                            <FaDiscord className="social" title="Discord" />
-                        </a>
-                        &nbsp;
-                        <a
-                            className="inline-block px-6"
-                            href={siteConfig.socials.Facebook}
-                        >
-                            <FaFacebook className="social" title="Facebook" />
-                        </a>
-                        &nbsp;
-                        <a
-                            className="inline-block px-6"
-                            href={siteConfig.socials.Instagram}
-                        >
-                            <FaInstagram className="social" title="Instagram" />
-                        </a>
-                        &nbsp;
-                        <a
-                            className="inline-block px-6"
-                            href={siteConfig.socials.GitHub}
-                        >
-                            <FaGithub className="social" title="GitHub" />
-                        </a>
-                        &nbsp;
-                        <a
-                            className="inline-block px-6"
-                            href={siteConfig.socials.GitLab}
-                        >
-                            <FaGitlab className="social" title="GitLab" />
-                        </a>
-                        &nbsp;
-                        <a
-                            className="inline-block px-6"
-                            href={siteConfig.socials.Twitch}
-                        >
-                            <FaTwitch className="social" title="Twitch" />
-                        </a>
-                        &nbsp;
-                        <a
-                            className="inline-block px-6"
-                            href={siteConfig.socials.Twitter}
-                        >
-                            <FaTwitter className="social" title="Twitter" />
-                        </a>
-                        &nbsp;
-                        <a
-                            className="inline-block px-6"
-                            href={siteConfig.socials.Youtube}
-                        >
-                            <FaYoutube className="social" title="Youtube" />
-                        </a>
+                        <HStack>
+                            <a
+                                className="inline-block px-6"
+                                href={siteConfig.socials.Discord}
+                            >
+                                <FaDiscord className="social" title="Discord" />
+                            </a>
+                            &nbsp;
+                            <a
+                                className="inline-block px-6"
+                                href={siteConfig.socials.Facebook}
+                            >
+                                <FaFacebook
+                                    className="social"
+                                    title="Facebook"
+                                />
+                            </a>
+                            &nbsp;
+                            <a
+                                className="inline-block px-6"
+                                href={siteConfig.socials.Instagram}
+                            >
+                                <FaInstagram
+                                    className="social"
+                                    title="Instagram"
+                                />
+                            </a>
+                            &nbsp;
+                            <a
+                                className="inline-block px-6"
+                                href={siteConfig.socials.GitHub}
+                            >
+                                <FaGithub className="social" title="GitHub" />
+                            </a>
+                            &nbsp;
+                            <a
+                                className="inline-block px-6"
+                                href={siteConfig.socials.GitLab}
+                            >
+                                <FaGitlab className="social" title="GitLab" />
+                            </a>
+                            &nbsp;
+                            <a
+                                className="inline-block px-6"
+                                href={siteConfig.socials.Twitch}
+                            >
+                                <FaTwitch className="social" title="Twitch" />
+                            </a>
+                            &nbsp;
+                            <a
+                                className="inline-block px-6"
+                                href={siteConfig.socials.Twitter}
+                            >
+                                <FaTwitter className="social" title="Twitter" />
+                            </a>
+                            &nbsp;
+                            <a
+                                className="inline-block px-6"
+                                href={siteConfig.socials.Youtube}
+                            >
+                                <FaYoutube className="social" title="Youtube" />
+                            </a>
+                        </HStack>
                     </div>
+                    <br />
                     <div>
                         <a
                             href={siteConfig.donate.saweria}
                             target="_blank"
                             rel="noreferrer"
                         >
-                            Dukung {siteConfig.title} Via saweria.co
+                            Dukung {siteConfig.title} Via <b>saweria.co</b>
                         </a>
                         <br />
                         <a
@@ -98,7 +107,7 @@ class Footer extends React.Component {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            Dukung {siteConfig.title} Via streamlabs
+                            Dukung {siteConfig.title} Via <b>streamlabs</b>
                         </a>
                     </div>
                     ©️ 2018 - {new Date().getFullYear()} {siteConfig.title} -
@@ -108,7 +117,7 @@ class Footer extends React.Component {
                     </a>
                     <br />
                     <a href={siteConfig.repository}>
-                        &#12304; Source Code &#12305;
+                        &#12304; <b>Source Code on GitLab</b> &#12305;
                     </a>
                 </Box>
             </Center>

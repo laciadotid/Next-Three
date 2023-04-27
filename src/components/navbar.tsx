@@ -102,15 +102,9 @@ export default function Nav() {
                                     <FaBars />
                                 </MenuButton>
                                 <MenuList alignItems={"center"}>
-                                    <MenuItem>
-                                        <Link href="tentang">Tentang Kami</Link>
-                                    </MenuItem>
-                                    <MenuItem>
-                                        <Link href="jasa">Jasa Website</Link>
-                                    </MenuItem>
-                                    <MenuItem>
-                                        <Link href="kontak">Kontak</Link>
-                                    </MenuItem>
+                                    <Link href="portfolio">
+                                        <MenuItem>Portfolio</MenuItem>
+                                    </Link>
                                 </MenuList>
                             </Menu>
                         </Stack>
